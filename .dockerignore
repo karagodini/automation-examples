@@ -1,0 +1,10 @@
+.git
+.venv
+venv
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+**/*.pyc
+.env
+price-monitor/data
+leads-webhook/data

@@ -1,0 +1,4 @@
+# Пример cron: каждый день в 09:00 по времени сервера.
+# Подставьте свои пути. Секреты читаются из .env, в crontab их писать не нужно.
+# crontab -e
+0 9 * * * cd /opt/automation-examples/price-monitor && set -a && . /opt/automation-examples/.env && set +a && /opt/automation-examples/.venv/bin/python -m price_monitor.main --max-pages 50 >> /var/log/price-monitor.log 2>&1
